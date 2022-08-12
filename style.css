@@ -1,0 +1,88 @@
+/* Universal selector reset*/
+/*  Tells the browser to account for any border
+ and padding in the specified values  for an element's 
+ width and height */
+
+/**Apply to all  **/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(-45deg, #ee7752, #23d5ab, #23d5ab, #ee7752);
+}
+
+/** HEADER **/
+
+.title {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+h1 {
+  color: bisque;
+  text-shadow: 2px 2px 5px red;
+}
+
+/** MAIN CONTENT **/
+
+.container-settings {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 200px;
+  height: 80px;
+}
+
+.container-grid {
+  width: 400px;
+  height: 400px;
+  background-color: antiquewhite;
+}
+
+/** Buttons  */
+button {
+  padding: 10px 24px;
+  color: blue;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+button:hover {
+  background: #2196f3;
+  color: white;
+}
+
+/** FOOTER **/
+
+.footer {
+  display: flex;
+  min-height: 50px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  gap: 5px;
+}
+
+.fa-github {
+  color: var(--primary-dark);
+  font-size: 24px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.fa-github:hover {
+  transform: rotate(360deg) scale(1.2);
+}
