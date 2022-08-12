@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Etch a sketch</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/5a658fc69c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <h1 class="title">Etch A Sketch</h1>
+    </header>
+
+    <div class="container">
+      <div class="container-grid"></div>
+
+      <div class="container-settings">
+        <div class="btn-1">
+          <button>Apply</button>
+        </div>
+        <div class="btn-2">
+          <button>Clear</button>
+        </div>
+        <div class="btn-3">
+          <input type="range" min="2" max="30" step="1" />
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p class="footer-text">
+        Copyright ©
+        <script>
+          document.write(new Date().getFullYear())
+        </script>
+        Alex44499
+      </p>
+      <a class="link" href="https://github.com/Alex44499" target="_blank">
+        <i class="fa fa-github"></i>
+      </a>
+    </footer>
+  </body>
+</html>
